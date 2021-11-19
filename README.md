@@ -32,10 +32,12 @@ python plot_learning_curve.py --loss Loss --learning-curve-csv cnn_celebA.csv
 python plot_learning_curve.py --loss Reconstruction_Loss --learning-curve-csv cnn_celebA.csv
 python plot_learning_curve.py --loss KL_Loss --learning-curve-csv cnn_celebA.csv
 ```
-| Loss (Reconstruction + KL) | Reconstruction Loss | KL Loss |
-|---|---|---|
-|![](assets/celebA/cnn/Loss.png)   | ![](assets/celebA/cnn/Reconstruction_Loss.png)  | ![](assets/celebA/cnn/KL_Loss.png)  |
 
+Loss (Reconstruction + KL) | Reconstruction Loss | KL Loss
+:---:|:---:|:---:
+<img src="assets/celebA/cnn/Loss.png" width="400" height="230"/> | <img src="assets/celebA/cnn/Reconstruction_Loss.png" width="400" height="230"/> | <img src="assets/celebA/cnn/KL_Loss.png" width="400" height="230"/>
+ 
+(Both training loss and Test loss decrease, I guess you can train more epochs if you want)
 
 ### Training with FC-based Model
 `
@@ -60,11 +62,9 @@ python plot_learning_curve.py --loss Loss --learning-curve-csv fc_celebA.csv
 python plot_learning_curve.py --loss Reconstruction_Loss --learning-curve-csv fc_celebA.csv
 python plot_learning_curve.py --loss KL_Loss --learning-curve-csv fc_celebA.csv
 ```
-| Loss (Reconstruction + KL) | Reconstruction Loss | KL Loss |
-|---|---|---|
-|![](assets/celebA/fc/Loss.png)   | ![](assets/celebA/fc/Reconstruction_Loss.png)  | ![](assets/celebA/fc/KL_Loss.png)  |
-
-
+Loss (Reconstruction + KL) | Reconstruction Loss | KL Loss
+:---:|:---:|:---:
+<img src="assets/celebA/fc/Loss.png" width="400" height="230"/> | <img src="assets/celebA/fc/Reconstruction_Loss.png" width="400" height="230"/> | <img src="assets/celebA/fc/KL_Loss.png" width="400" height="230"/>
 
 ## MNIST Dataset
 
@@ -91,9 +91,9 @@ python plot_learning_curve.py --loss Loss --learning-curve-csv cnn_mnist.csv
 python plot_learning_curve.py --loss Reconstruction_Loss --learning-curve-csv cnn_mnist.csv
 python plot_learning_curve.py --loss KL_Loss --learning-curve-csv cnn_mnist.csv
 ```
-| Loss (Reconstruction + KL) | Reconstruction Loss | KL Loss |
-|---|---|---|
-|![](assets/mnist/cnn/Loss.png)   | ![](assets/mnist/cnn/Reconstruction_Loss.png)  | ![](assets/mnist/cnn/KL_Loss.png)  |
+Loss (Reconstruction + KL) | Reconstruction Loss | KL Loss
+:---:|:---:|:---:
+<img src="assets/mnist/cnn/Loss.png" width="400" height="230"/> | <img src="assets/mnist/cnn/Reconstruction_Loss.png" width="400" height="230"/> | <img src="assets/mnist/cnn/KL_Loss.png" width="400" height="230"/>
 
 ### Plot Latent Space
 Using t-SNE, maps 16 dimensional latent space to 2D.
